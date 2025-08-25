@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice-2 Re-useable Function Create</title>
+</head>
+<body>
+ <div>
+  <h1 id="number-change">Number is Changing by click: 0 </h1>
+
+  <button id="button-1">1</button>
+  <button id="button-2">2</button>
+  <button id="button-3">3</button>
+  <button id="button-4">4</button>
+ </div> 
+ 
+<script>
+function putNumber(num){
+    const h1 = document.getElementById("number-change")
+ h1.innerText = num
+}
+
+
+document.getElementById('button-1').addEventListener('click', function(){
+  console.log('button is clicked')
+ putNumber('1')
+})
+document.getElementById('button-2').addEventListener('click', function(){
+  console.log('button is clicked')
+putNumber('2')
+})
+document.getElementById('button-3').addEventListener('click', function(){
+  console.log('button is clicked')
+putNumber('3')
+})
+document.getElementById('button-4').addEventListener('click', function(){
+  console.log('button is clicked')
+putNumber('4')
+})
+
+
+</script>
+</body>
+</html>
